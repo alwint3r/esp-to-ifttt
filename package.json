@@ -1,0 +1,16 @@
+{
+  "name": "iot-class-fun",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Alwin Arrasyid <winter@dycode.com>",
+  "license": "MIT",
+  "dependencies": {
+    "mqtt": "^1.11.0",
+    "superagent": "^2.0.0"
+  }
+}
