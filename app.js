@@ -37,7 +37,7 @@ client.on('message', (topic, data) => {
 
         if ((now - lastSendMessage) >= 10000 || !lastSendMessage) {
             request
-                .post('https://maker.ifttt.com/trigger/${config.event}/with/key/${config.key}')
+                .post(`https://maker.ifttt.com/trigger/${config.event}/with/key/${config.key}`)
                 .send({ value1: payload.roomTemp })
                 .end((err, response) => {
                     if (err) {
